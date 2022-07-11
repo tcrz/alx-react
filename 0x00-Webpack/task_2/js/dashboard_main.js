@@ -1,6 +1,4 @@
 import $ from "jquery";
-import '../css/main.css';
-// import image from '../assets/holberton-logo.jpg'
 
 const _ = require('lodash');
 
