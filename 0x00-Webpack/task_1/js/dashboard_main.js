@@ -10,7 +10,7 @@ $('body').append('<p>Copyright - Holberton School</p>');
 
 
 // let count = 0
-function updateCounter() {
+const updateCounter = () => {
   let count = $('#count').val() || 0;
   $('body').on('click', 'button', function (){
     count += 1;
@@ -18,5 +18,5 @@ function updateCounter() {
   });
 }
 
-
  _.debounce(updateCounter, 500)();
+ updateCounter()
