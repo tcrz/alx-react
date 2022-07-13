@@ -1,6 +1,6 @@
-import logo from './hbnblogo.jpg';
+import logo from '../assets/hbnblogo.jpg';
 import './App.css';
-import { getFullYear, getFooterCopy } from './utils'
+import { getFullYear, getFooterCopy } from '../utils/utils'
 
 
 function App() {
