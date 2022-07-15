@@ -17,7 +17,7 @@ describe('Notifications Component', () => {
     expect(wrapper.containsMatchingElement(<p>Here is the list of notifications</p>));
   })
 
-  it("renders three list items", () => {
+  it("renders first NotificationItem element with the right html", () => {
     const firstChild = wrapper.find('ul').children().first();
     // console.log(firstChild.html())
     expect(firstChild.html()).toBe('<li data-notification-type="default">New course available</li>');
