@@ -34,6 +34,10 @@ and listNotifications prop is not empty`, () => {
     expect(wrapper.find('.menuItem').exists()).toEqual(true)
   })
 
+  afterEach(() => {
+    jest.restoreAllMocks();
+  });
+
   it('console logs right message when markAsRead method is called', () => {
     const log = jest.spyOn(console, "log").mockImplementation(() => {});
     wrapper.instance().markAsRead(2)
