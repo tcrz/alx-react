@@ -1,6 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-class BodySection extends React.Component {
+
+export default class BodySection extends React.Component {
+  static propTypes = {
+    title: PropTypes.string,
+    children: PropTypes.element
+  }
+
   render() {
     return (
       <div className='bodySection'>

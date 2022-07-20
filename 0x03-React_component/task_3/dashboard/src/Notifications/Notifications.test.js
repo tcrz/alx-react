@@ -20,8 +20,8 @@ and listNotifications prop is not empty`, () => {
     expect(wrapper.find('ul').children().length).toEqual(notifLength);
   })
 
-  it("renders the text: 'Here is the list of notifications'", () => {
-    expect(wrapper.containsMatchingElement(<p>Here is the list of notifications</p>));
+  it("renders the text: 'Here is the list of notifications:'", () => {
+    expect(wrapper.containsMatchingElement(<p>Here is the list of notifications:</p>)).toEqual(true);
   })
 
   it("renders first NotificationItem element with the right html", () => {
@@ -54,7 +54,7 @@ and listNotifications prop is empty (or not used)`, () => {
   })
 
   it("renders the text: 'No new notification for now'", () => {
-    expect(wrapper.containsMatchingElement(<p>No new notification for now</p>));
+    expect(wrapper2.containsMatchingElement(<p>No new notification for now</p>)).toEqual(true);
   })
 
 })

@@ -6,6 +6,8 @@ import Footer from '../Footer/Footer';
 import Login from '../Login/Login';
 import Notifications from '../Notifications/Notifications';
 import CourseList from '../CourseList/CourseList';
+import BodySectionWithMarginBottom from '../BodySection/BodySectionWithMarginBottom';
+import BodySection from '../BodySection/BodySection';
 
 
 export const listCourses = [
@@ -51,12 +53,16 @@ class App extends React.Component {
   render () {
     const LoginStatus = () => {
       if (this.props.isLoggedIn) {
-        return <CourseList listCourses={listCourses}/>
+        return (
+          <BodySectionWithMarginBottom title="Course List">
+            <CourseList listCourses={listCourses}/>
+          </BodySectionWithMarginBottom>
+        )
       } else {
         return (
-          <div className="App-body"><p>Login to access the full dashboard</p>
+          <BodySectionWithMarginBottom title="Log in to continue">
             <Login/>
-          </div>
+          </BodySectionWithMarginBottom>
         )
     }
   }
@@ -67,6 +73,7 @@ class App extends React.Component {
         <Header/>
       </div>
       {LoginStatus()}
+      <BodySection title="News from the School"><p>News around the school!</p></BodySection>
       <div className="App-footer">
         <Footer />
       </div>
