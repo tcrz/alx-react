@@ -21,8 +21,7 @@ export default class Notifications extends React.Component {
 
   static defaultProps = {
       displayDrawer: true,
-      listNotifications: [],
-      // markAsRead: (id) => console.log(`Notification ${id} has been marked as read`)
+      listNotifications: []
   }
 
   markAsRead(id) {
