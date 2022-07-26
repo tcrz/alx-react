@@ -11,7 +11,7 @@
 * [React Fragments](https://reactjs.org/docs/fragments.html)
 * [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
-## Learning Objectives
+## Objectives
 
 * How to create basic React components using functions
 * How to reuse components
