@@ -1,5 +1,8 @@
 # React Props
 
+## Running the App  
+Inside each task folder (except task_3) is a dashboard directory. Run ```npm i --legacy-peer-deps``` in at the root of the dashboard directory to start the app.  
+Tests: Run ```npm run test-watch``` to run all tests
 
 ## Resources
 
