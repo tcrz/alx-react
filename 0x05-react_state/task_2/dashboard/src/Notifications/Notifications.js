@@ -105,11 +105,11 @@ export default class Notifications extends React.Component {
   }
 
   shouldComponentUpdate(nextProps) {
-    if (nextProps.displayDrawer != this.props.displayDrawer) {
-      return true
-    }
-    // return (nextProps.listNotifications.length > this.props.listNotifications.length) ? true : false
-    return false
+    return (nextProps.displayDrawer != this.props.displayDrawer)
+    // if nextProps.length > this.props.listNotifications.length) {
+    //   return true
+    // }
+    // return false
   }
 
   render() {
