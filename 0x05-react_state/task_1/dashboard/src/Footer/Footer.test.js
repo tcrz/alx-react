@@ -15,6 +15,6 @@ describe('Footer component', () => {
   })
 
   it('renders the text “Copyright”', () => {
-    expect(wrapper.containsMatchingElement('Copyright'));
+    expect(wrapper.find('p').text()).toContain("Copyright");
   })
 })
