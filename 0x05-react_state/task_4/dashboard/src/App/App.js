@@ -20,11 +20,6 @@ const styles = StyleSheet.create({
   }
 })
 
-export const listCourses = [
-  {id: 1, name: 'ES6', credit: 60},
-  {id: 2, name: 'Webpack', credit: 20},
-  {id: 3, name: 'React', credit: 40}
-]
 
 export default class App extends React.Component {
   constructor(props){
@@ -32,6 +27,11 @@ export default class App extends React.Component {
     this.state = {
       displayDrawer: false,
       user: defaultUser,
+      listCourses: [
+        {id: 1, name: 'ES6', credit: 60},
+        {id: 2, name: 'Webpack', credit: 20},
+        {id: 3, name: 'React', credit: 40}
+      ],
       listNotifications: [
         {id: 1, type:"default", value: "New course available", html:{__html:null}},
         {id: 2, type:"urgent", html:{__html:"Object Oriented Programming intro"}},
@@ -90,7 +90,7 @@ export default class App extends React.Component {
       if (currentUser.isLoggedIn) {
         return (
           <BodySectionWithMarginBottom title="Course List">
-            <CourseList listCourses={listCourses}/>
+            <CourseList listCourses={this.state.listCourses}/>
           </BodySectionWithMarginBottom>
         )
       } else {

@@ -5,9 +5,9 @@ import Footer from '../Footer/Footer';
 import Login from '../Login/Login';
 import { shallow } from 'enzyme';
 import CourseList from '../CourseList/CourseList';
-import { listCourses } from './App';
 import { StyleSheetTestUtils } from 'aphrodite';
 import { listNotifications } from '../Notifications/Notifications.test'
+import { listCourses } from '../CourseList/CourseList.test'
 
 beforeEach(() => {
   StyleSheetTestUtils.suppressStyleInjection();

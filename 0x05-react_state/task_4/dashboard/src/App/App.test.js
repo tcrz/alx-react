@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import Login from '../Login/Login';
 import { shallow } from 'enzyme';
 import CourseList from '../CourseList/CourseList';
-import { listCourses } from './App';
+import { listCourses } from '../CourseList/CourseList.test';
 import { StyleSheetTestUtils } from 'aphrodite';
 import { listNotifications } from '../Notifications/Notifications.test'
 
