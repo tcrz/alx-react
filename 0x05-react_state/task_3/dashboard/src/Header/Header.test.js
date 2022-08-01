@@ -51,7 +51,7 @@ describe('Context value tests', () => {
   it('calls spy function when logOut is clicked (user defined, isLoggedIn is true and an email is set)', ()=>{
     const spy = jest.spyOn(data, 'logOut')
     const wrapper  = mount(<AppContext.Provider value={{currentUser: data.user, logOut: data.logOut}}><Header/></AppContext.Provider>)
-    const logout = wrapper.find('#logoutSection span')
+    const logout = wrapper.find('#logoutSection a')
     logout.simulate('click')
     expect(spy).toHaveBeenCalled()
   })
