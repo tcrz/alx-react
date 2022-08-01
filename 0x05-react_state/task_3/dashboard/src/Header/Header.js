@@ -37,7 +37,7 @@ export default class Header extends React.Component {
       if (data.currentUser.isLoggedIn){
         return (
         <section id="logoutSection">Welcome {email} 
-          <span  className={css(styles.logOut)} onClick={data.logOut}> (logout)</span>
+          <a className={css(styles.logOut)} onClick={data.logOut}> (logout)</a>
         </section>
         )
       }
