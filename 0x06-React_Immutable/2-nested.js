@@ -5,5 +5,5 @@ export default function accessImmutableObject (object, array) {
   // make the object immutable
   const ImmutableObject = Map(object);
   // checks and returns any keys in the list can be found in ImmutableOject
-  return ImmutableObject.getIn(array);
+  return ImmutableObject.getIn(array, undefined);
 }
