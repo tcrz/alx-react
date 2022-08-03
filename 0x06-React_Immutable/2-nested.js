@@ -1,6 +1,6 @@
 /* function should return the value of the object at the defined path */
+import { Map } from 'immutable';
 
-const { Map } = require('immutable');
 export default function accessImmutableObject (object, array) {
   // make the object immutable
   const ImmutableObject = Map(object);
