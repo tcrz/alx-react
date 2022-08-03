@@ -1,7 +1,7 @@
 /* function should return the value of the object at the defined path */
 import { Map } from 'immutable';
 
-export default function accessImmutableObject (object, array) {
+export default function accessImmutableObject(object, array) {
   // make the object immutable
   const ImmutableObject = Map(object);
   // checks and returns any keys in the list can be found in ImmutableOject
