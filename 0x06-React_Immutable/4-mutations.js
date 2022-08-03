@@ -4,7 +4,7 @@ Modify the value for the index 2, to Benjamin
 Modify the value for the index 4, to Oliver
 */
 
-const { Map } = require('immutable');
+import { Map } from 'immutable';
 
 const object = {
   1: 'Liam',
@@ -18,5 +18,5 @@ const object = {
 export const map = Map(object);
 export const map2 = map.withMutations((map) => {
   map.set(2, 'Benjamin').set(4, 'Oliver');
-}
-// console.log(map2.toJS())
+})
+//console.log(map2.toJS())
