@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import logo from '../assets/hbnblogo.jpg';
-import { AppContext } from '../App/AppContext';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logout } from '../actions/uiActionCreators';
@@ -35,8 +34,6 @@ const styles = StyleSheet.create({
 export class Header extends React.Component {
   render() {
     const {user} = this.props
-    // console.log(user)
-    // const email = data.currentUser.email
     const displayText = () => {
       if (this.props.isLoggedIn){
         return (
@@ -57,7 +54,6 @@ export class Header extends React.Component {
     )
   }
 }
-// Header.contextType = AppContext
 
 const mapStateToProps = (state) => {
   const user = state.get("user")

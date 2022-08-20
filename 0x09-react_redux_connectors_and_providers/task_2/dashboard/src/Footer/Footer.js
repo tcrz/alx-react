@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, css} from 'aphrodite';
 import { getFullYear, getFooterCopy } from '../utils/utils'
-import { AppContext } from '../App/AppContext';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -28,7 +27,6 @@ const styles = StyleSheet.create({
 
 
 export function Footer(props) {
-  // const data = React.useContext(AppContext)
   const footerText = (props.isLoggedIn) ? <a href="#">Contact us</a> : `Copyright ${getFullYear()} - ${getFooterCopy(false)}`
   return (
     <div className={css(styles.AppFooter)}>
@@ -40,7 +38,6 @@ export function Footer(props) {
 const mapStateToProps = (state) => {
   const user = state.get("user")
   const isLoggedIn = state.get("isUserLoggedIn")
-  // console.log(user)
   return { user, isLoggedIn }
 }
 
