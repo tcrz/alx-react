@@ -24,7 +24,6 @@ describe('Footer component', () => {
   })
 
   it('renders the text "Contact us" when context is set to:( user defined, isLoggedIn is true and an email is set)', () => {
-    defaultUser.isLoggedIn = true
     const wrapper = shallow(<Footer isLoggedIn={true}/>)
     expect(wrapper.find('p').text()).toContain("Contact us");
   })
