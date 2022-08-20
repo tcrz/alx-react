@@ -69,12 +69,16 @@ Header.propTypes = {
   user: PropTypes.shape({
     email: PropTypes.string,
     password: PropTypes.string,
-    isLoggedIn: PropTypes.bool
-  })
+  }),
+  isLoggedIn: PropTypes.bool
 }
 
 Header.defaultProps = {
-    user: {}
+    user: {
+      email: "",
+      password: ""
+    },
+    isLoggedIn: false
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header)

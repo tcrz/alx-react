@@ -44,17 +44,17 @@ const mapStateToProps = (state) => {
 Footer.propTypes = {
   user: PropTypes.shape({
     email: PropTypes.string,
-    password: PropTypes.string,
-    isLoggedIn: PropTypes.bool
-  })
+    password: PropTypes.string
+  }),
+  isLoggedIn: PropTypes.bool
 }
 
 Footer.defaultProps = {
     user: {
       email: "",
-      password: "",
-      isLoggedIn: false
-    }
+      password: ""
+    },
+    isLoggedIn: false
 }
 
 export default connect(mapStateToProps)(Footer)
