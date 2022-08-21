@@ -27,7 +27,7 @@ describe('NotificationItem component', () => {
   it('renders the correct html (with given dummy html props)', () => {
     const wrapper = shallow(<NotificationItem html={{ __html: '<u>test</u>' }} />);
     const html = wrapper.html()
-    expect(html).toBe('<li class="default_15qxxom-o_O-listItem_1fp99j6" data-notification-type="default"><u>test</u></li>')
+    expect(html).toBe('<li class="default_1y9uryn-o_O-listItem_1fp99j6" data-notification-type="default"><u>test</u></li>')
   })
 
 })
