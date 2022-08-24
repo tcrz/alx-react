@@ -1,7 +1,8 @@
 # React components  
-## Running the App  
-Inside each task folder (except task_3) is a dashboard directory. Run ```npm i --legacy-peer-deps``` in at the root of the dashboard directory to start the app.  
-Tests: Run ```npm run test-watch``` to run all tests
+
+# Running the App
+Inside each task folder is a dashboard directory. Run ```npm i``` to install dependencies then run  ```npm start``` in at the root of the dashboard directory to start the app.  
+Tests: Run ```npm test``` to run all tests
 
 # Resources  
 
